@@ -37,6 +37,18 @@
         tap-ms = <100>;
     };
 
+    hm_behavior: hm_behavior {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HM_BEHAVIOR";
+        bindings = <&kp>, <&kp>;
+
+        #binding-cells = <2>;
+        flavor = "tap-preferred";
+        tapping-term-ms = <250>;
+        require-prior-idle-ms = <150>;
+        quick-tap-ms = <0>;
+    };
+
     behaviors {
     };
 
